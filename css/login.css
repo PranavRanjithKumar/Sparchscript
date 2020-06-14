@@ -72,3 +72,9 @@ button:hover{
 ::placeholder{
   font-weight: bold;
 }
+
+@media screen and (max-width:767px){
+  .login-box{
+    width: 280px;
+    height : 580px;
+  }
