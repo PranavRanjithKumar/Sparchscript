@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="css/login.css">
+  <title>Sprachscript  |   Login</title>
+</head>
+<body style="background:linear-gradient(rgba(255,255,255,.5),rgba(255,255,255,.5)),url('new.jpg') no-repeat center center;">
+<div class="login-box">
+	<h1>Sparchscript Login</h1>
+  <form method="post" id="form1">
+	<div class="textbox">
+      <i class="fas fa-user"></i>
+			<input type="text" name="user_name" placeholder="Username" required>
+  </div>
+  <div class="textbox">
+      <i class="fas fa-lock"></i>
+      <input type="Password" name="password" placeholder="Password" required>
+  </div>
+      <button type="submit" name="submit" form="form1">Login</button>
+		</form>
+    	<input type="button" onclick="redirecttoindex();return false;" class="btn" value="Cancel">
+      <p style="font-weight:700;text-shadow: .1rem .1rem .5rem black;"><a style="text-decoration:none;color:white" href="forgotpass.php">Forgot Password?</a></p>
+      <p style="font-weight:700;text-shadow: .1rem .1rem .5rem black;"><a style="text-decoration:none;color:white" href="signup.php">New to Sparchscript?</a></p>
+</div>
+</body>
+<script type="text/javascript">
+	function redirecttoindex() {
+		window.location.href="index.php"
+	}
+</script>
+</html>
