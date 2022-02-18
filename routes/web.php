@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PrescriptionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +22,16 @@ Route::middleware(['auth','verified'])->group(function () {
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+
+    Route::get('/warn-no-profile',function() {
+        return view('updateProfile-warn');
+    })->name('updateProfileAlert');
+
+    Route::get('/update-profile',function() {
+        return view('updateProfile-warn');
+    })->name('profile.update');
+
+    Route::get('/prescription',[PrescriptionController::class, 'getProfile'])->middleware('updated');
     
 });
 

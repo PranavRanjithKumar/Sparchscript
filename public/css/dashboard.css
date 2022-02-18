@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+body {
+    overflow-x: hidden;
+}
+header {
+    background-color: #40474e;
+    color: white;
+    padding: 1rem 0rem 1rem;
+}
+.row {
+    margin: 0rem 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+h3.heading {
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+.heading-underline {
+    width: 3rem;
+    height: 0.2rem;
+    background-color: #1ebba3;
+    margin: 0 auto 2rem;
+}
+.jumbotron-container {
+    margin-bottom: 0;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.container {
+    padding-top: 20px;
+    background-size: cover !important;
+}
+
+.prescriptions {
+    background-image: linear-gradient(45deg, #7175da, #9790f2);
+    font-family: "Muli", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+.prescription {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    max-width: 100%;
+    margin: 20px;
+    overflow: hidden;
+    width: 700px;
+}
+
+.prescription h6 {
+    opacity: 0.6;
+    margin: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.prescription h2 {
+    letter-spacing: 1px;
+    margin: 10px 0;
+}
+
+.prescription-preview {
+    background-color: #2a265f;
+    color: #fff;
+    padding: 30px;
+    max-width: 270px;
+}
+
+.prescription-preview span {
+    color: #fff;
+    display: inline-block;
+    font-size: 17px;
+    opacity: 0.6;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.prescription-info {
+    padding: 30px;
+    position: relative;
+}
+
+.btn-prescription {
+    background-color: #2a265f;
+    border: 0;
+    border-radius: 50px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 25px;
+    letter-spacing: 1px;
+}
